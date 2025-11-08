@@ -20,4 +20,9 @@ public class ChatController {
         String aiResponse = chatService.getResponse(userMessage);
         return Map.of("response", aiResponse);
     }
+
+    @GetMapping("/chats")
+    public void getChats() {
+        String msg = "Hello";
+    }
 }
